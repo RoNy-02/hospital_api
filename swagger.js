@@ -11,7 +11,11 @@ const swaggerDocument = {
             description: 'Servidor en linea',
         },
         {
-            url: 'http://localhost:3000',
+            url: 'http://localhost:3000/doctores',
+            description: 'Servidor local'
+        },
+        {
+            url: 'http://localhost:3000/doctores',
             description: 'Servidor local'
         }
     ],

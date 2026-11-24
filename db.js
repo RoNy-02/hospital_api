@@ -10,8 +10,6 @@ const connection = mysql.createConnection({
 
 });
 
-
-
 connection.connect((error) => {
     if (error) {
         console.log('Error al conectar con AWS:', error.message);

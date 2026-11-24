@@ -1,0 +1,80 @@
+###
+GET  http://localhost:3000/medicamentos/ HTTP/1.1
+
+###
+GET  http://localhost:3000/doctores HTTP/1.1
+
+###
+GET  http://localhost:3000/doctores/2 HTTP/1.1
+
+###
+GET http://localhost:3000/medicamentos/1 HTTP/1.1
+
+###
+POST http://localhost:3000/medicamentos HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Paracetamol",
+  "laboratorio": "Genomma Lab",
+  "categoria": "Analgesico",
+  "precio": "85.50",
+  "stock": 90,
+  "presentacion": "Tabletas",
+  "fecha_caducidad": "2027-05-15",
+  "proveedor": "Farmaceutica Nacional",
+  "ubicacion": "Pachuca de Soto"
+}
+###
+POST http://localhost:3000/doctores HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Patricio",
+  "apellido_paterno": "Hernandez",
+  "apellido_materno": "Lopez",
+  "especialidad": "Cardiologia",
+  "consultorio": "101",
+  "telefono": "7711234567",
+  "correo": "carlos.hernandez@gmail.com",
+  "fecha_ingreso": "2022-03-15",
+  "turno": "Matutino"
+}
+
+###
+DELETE http://localhost:3000/medicamentos/6 HTTP/1.1
+
+###
+DELETE http://localhost:3000/doctores/6 HTTP/1.1
+
+###
+PUT http://localhost:3000/medicamentos/7 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Ambroxol",
+  "laboratorio": "Genomma Lab",
+  "categoria": "Analgesico",
+  "precio": "85.50",
+  "stock": 90,
+  "presentacion": "Tabletas",
+  "fecha_caducidad": "2027-05-15",
+  "proveedor": "Farmaceutica Nacional",
+  "ubicacion": "Atlanta"
+}
+
+###
+PUT http://localhost:3000/doctores/7 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Jhon cena",
+  "apellido_paterno": "Hernandez",
+  "apellido_materno": "Lopez",
+  "especialidad": "Cardiologia",
+  "consultorio": "104",
+  "telefono": "7711234567",
+  "correo": "carlos.hernandez@gmail.com",
+  "fecha_ingreso": "2022-03-15",
+  "turno": "Vespertino"
+}

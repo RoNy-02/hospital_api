@@ -7,8 +7,8 @@ const swaggerDocument = {
     },
     servers: [
         {
-            url: 'http://localhost:3000',
-            description: 'Servidor local'
+            url: 'https://hospital-api-tcp5.onrender.com/',
+            description: 'Servidor en linea'
         }
     ],
     tags: [
